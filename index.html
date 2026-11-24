@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SkillSphere — Next-Gen Online Learning & Course Platform</title>
+  <meta name="description" content="SkillSphere offers interactive, certified online courses in Web Development, AI, Data Science, and UI/UX taught by top industry mentors.">
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="top-banner">
+    <div class="container banner-inner">
+      <span><i class="fa-solid fa-graduation-cap"></i> <strong>Flash Spring Sale:</strong> Get up to 40% OFF all certification tracks with code <code>LEARN2026</code></span>
+      <a href="#courses" class="banner-link">Claim Discount &rarr;</a>
+    </div>
+  </div>
+
+  <!-- Header / Navigation -->
+  <header class="navbar-header" id="header">
+    <div class="container nav-container">
+      <a href="#" class="brand-logo">
+        <div class="logo-mark"><i class="fa-solid fa-shapes"></i></div>
+        <span>Skill<strong>Sphere</strong></span>
+      </a>
+
+      <!-- Search Bar -->
+      <div class="nav-search-wrapper">
+        <i class="fa-solid fa-magnifying-glass search-icon"></i>
+        <input type="text" id="course-search-input" placeholder="Search 500+ courses, skills, instructors..." autocomplete="off">
+      </div>
+
+      <nav class="nav-menu" id="nav-menu">
+        <ul class="nav-list">
+          <li><a href="#categories" class="nav-link">Categories</a></li>
+          <li><a href="#courses" class="nav-link">Featured Courses</a></li>
+          <li><a href="#instructors" class="nav-link">Instructors</a></li>
+          <li><a href="#reviews" class="nav-link">Reviews</a></li>
+          <li><a href="#pricing" class="nav-link">Pricing</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-auth-actions">
+        <button class="btn btn-text" id="login-modal-btn">Log In</button>
+        <button class="btn btn-primary" id="signup-modal-btn">Join Free</button>
+        <button class="hamburger-btn" id="hamburger-btn" aria-label="Toggle Navigation">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-container">
+        <div class="hero-text-content">
+          <div class="hero-pill">
+            <span class="pill-sparkle"><i class="fa-solid fa-star"></i></span>
+            Rated #1 Online Tech Academy 2026
+          </div>
+          <h1 class="hero-title">
+            Accelerate Your Career with <span class="highlight-text">Industry-Led</span> Learning.
+          </h1>
+          <p class="hero-desc">
+            Master real-world tech, design, and business skills with bite-sized hands-on labs, 1-on-1 code reviews, and recognized professional certifications.
+          </p>
+
+          <div class="hero-search-box">
+            <div class="input-field">
+              <i class="fa-solid fa-compass"></i>
+              <input type="text" placeholder="e.g. Full-Stack React, Python AI, Figma UX">
+            </div>
+            <a href="#courses" class="btn btn-primary btn-lg">Explore Courses</a>
+          </div>
+
+          <div class="hero-social-proof">
+            <div class="avatars-group">
+              <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=100&q=80" alt="Student">
+              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80" alt="Student">
+              <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=100&q=80" alt="Student">
+              <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=100&q=80" alt="Student">
+            </div>
+            <div class="proof-meta">
+              <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <p>Trusted by <strong>85,000+</strong> students globally</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-graphics">
+          <div class="graphics-card">
+            <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=800&q=80" alt="Students learning together" class="main-graphic-img">
+            
+            <!-- Float Floating Badge 1 -->
+            <div class="floating-stat stat-floating-top">
+              <div class="stat-icon-circ"><i class="fa-solid fa-award"></i></div>
+              <div>
+                <strong>94% Hired</strong>
+                <span>within 6 months</span>
+              </div>
+            </div>
+
+            <!-- Floating Badge 2 -->
+            <div class="floating-stat stat-floating-bottom">
+              <div class="stat-icon-circ orange"><i class="fa-solid fa-bolt"></i></div>
+              <div>
+                <strong>500+ Projects</strong>
+                <span>Portfolio-ready code</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="section categories-section" id="categories">
+      <div class="container">
+        <div class="section-top">
+          <span class="sub-badge">Browse Categories</span>
+          <h2 class="section-title">Explore In-Demand Fields</h2>
+          <p class="section-subtitle">Choose from verified curriculums designed by hiring managers and tech leaders.</p>
+        </div>
+
+        <div class="categories-grid">
+          <div class="category-card" data-category="web">
+            <div class="cat-icon-box blue"><i class="fa-solid fa-code"></i></div>
+            <h3>Web Development</h3>
+            <p>React, Next.js, Node, TypeScript</p>
+            <span class="course-count">124 Courses &rarr;</span>
+          </div>
+
+          <div class="category-card" data-category="ai">
+            <div class="cat-icon-box purple"><i class="fa-solid fa-brain"></i></div>
+            <h3>AI & Machine Learning</h3>
+            <p>PyTorch, LLMs, NLP, Computer Vision</p>
+            <span class="course-count">92 Courses &rarr;</span>
+          </div>
+
+          <div class="category-card" data-category="data">
+            <div class="cat-icon-box teal"><i class="fa-solid fa-chart-pie"></i></div>
+            <h3>Data Science & Analytics</h3>
+            <p>Python, SQL, Tableau, PowerBI</p>
+            <span class="course-count">85 Courses &rarr;</span>
+          </div>
+
+          <div class="category-card" data-category="design">
+            <div class="cat-icon-box pink"><i class="fa-solid fa-bezier-curve"></i></div>
+            <h3>UI/UX & Product Design</h3>
+            <p>Figma, Design Systems, Wireframing</p>
+            <span class="course-count">64 Courses &rarr;</span>
+          </div>
+
+          <div class="category-card" data-category="cloud">
+            <div class="cat-icon-box amber"><i class="fa-solid fa-cloud"></i></div>
+            <h3>Cloud & DevOps</h3>
+            <p>AWS, Docker, Kubernetes, CI/CD</p>
+            <span class="course-count">78 Courses &rarr;</span>
+          </div>
+
+          <div class="category-card" data-category="security">
+            <div class="cat-icon-box red"><i class="fa-solid fa-shield-halved"></i></div>
+            <h3>Cybersecurity</h3>
+            <p>Ethical Hacking, Network Defense</p>
+            <span class="course-count">48 Courses &rarr;</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Courses Section -->
+    <section class="section courses-section" id="courses">
+      <div class="container">
+        <div class="section-top flex-between">
+          <div>
+            <span class="sub-badge">Popular Curriculums</span>
+            <h2 class="section-title">Featured Certification Courses</h2>
+            <p class="section-subtitle">Earn industry-standard credentials validated by top tech employers.</p>
+          </div>
+          <div class="filter-tabs" id="course-filter-tabs">
+            <button class="tab-btn active" data-filter="all">All</button>
+            <button class="tab-btn" data-filter="web">Web Dev</button>
+            <button class="tab-btn" data-filter="ai">AI & ML</button>
+            <button class="tab-btn" data-filter="design">Design</button>
+          </div>
+        </div>
+
+        <div class="courses-grid" id="courses-grid">
+          <!-- Course Card 1 -->
+          <div class="course-card" data-cat="web">
+            <div class="course-thumbnail">
+              <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=700&q=80" alt="Modern Web Dev Bootcamp">
+              <span class="badge-tag best-seller">Bestseller</span>
+            </div>
+            <div class="course-content">
+              <div class="course-meta-top">
+                <span class="course-level"><i class="fa-solid fa-layer-group"></i> All Levels</span>
+                <span class="course-rating"><i class="fa-solid fa-star"></i> 4.9 (3,420)</span>
+              </div>
+              <h3 class="course-title">Full-Stack Web Development Mastery: React, Node & PostgreSQL</h3>
+              <div class="instructor-snippet">
+                <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=80&q=80" alt="Sarah Jenkins">
+                <span>Sarah Jenkins • Senior Web Architect</span>
+              </div>
+              <div class="course-stats-bar">
+                <span><i class="fa-regular fa-clock"></i> 48 Hours</span>
+                <span><i class="fa-regular fa-file-code"></i> 26 Projects</span>
+                <span><i class="fa-solid fa-certificate"></i> Verified</span>
+              </div>
+              <div class="course-card-footer">
+                <div class="price-box">
+                  <span class="price-current">$49.99</span>
+                  <span class="price-original">$119.99</span>
+                </div>
+                <button class="btn btn-primary btn-sm enroll-trigger-btn" data-course="Full-Stack Web Development Mastery" data-price="$49.99">Enroll Now</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Course Card 2 -->
+          <div class="course-card" data-cat="ai">
+            <div class="course-thumbnail">
+              <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=700&q=80" alt="Generative AI Deep Dive">
+              <span class="badge-tag hot">Trending</span>
+            </div>
+            <div class="course-content">
+              <div class="course-meta-top">
+                <span class="course-level"><i class="fa-solid fa-layer-group"></i> Intermediate</span>
+                <span class="course-rating"><i class="fa-solid fa-star"></i> 4.8 (2,150)</span>
+              </div>
+              <h3 class="course-title">Generative AI Engineering: LLMs, LangChain, RAG & Autonomous Agents</h3>
+              <div class="instructor-snippet">
+                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=80&q=80" alt="Dr. Marcus Thorne">
+                <span>Dr. Marcus Thorne • AI Research Lead</span>
+              </div>
+              <div class="course-stats-bar">
+                <span><i class="fa-regular fa-clock"></i> 36 Hours</span>
+                <span><i class="fa-regular fa-file-code"></i> 14 AI Apps</span>
+                <span><i class="fa-solid fa-certificate"></i> Verified</span>
+              </div>
+              <div class="course-card-footer">
+                <div class="price-box">
+                  <span class="price-current">$64.99</span>
+                  <span class="price-original">$149.99</span>
+                </div>
+                <button class="btn btn-primary btn-sm enroll-trigger-btn" data-course="Generative AI Engineering" data-price="$64.99">Enroll Now</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Course Card 3 -->
+          <div class="course-card" data-cat="design">
+            <div class="course-thumbnail">
+              <img src="https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?auto=format&fit=crop&w=700&q=80" alt="UI UX Design Bootcamp">
+              <span class="badge-tag popular">Popular</span>
+            </div>
+            <div class="course-content">
+              <div class="course-meta-top">
+                <span class="course-level"><i class="fa-solid fa-layer-group"></i> Beginner to Pro</span>
+                <span class="course-rating"><i class="fa-solid fa-star"></i> 4.9 (4,810)</span>
+              </div>
+              <h3 class="course-title">UI/UX Design Masterclass: User Research, Wireframing & Design Systems</h3>
+              <div class="instructor-snippet">
+                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=80&q=80" alt="Elena Rostova">
+                <span>Elena Rostova • Head of Product Design</span>
+              </div>
+              <div class="course-stats-bar">
+                <span><i class="fa-regular fa-clock"></i> 32 Hours</span>
+                <span><i class="fa-regular fa-file-code"></i> 8 Case Studies</span>
+                <span><i class="fa-solid fa-certificate"></i> Verified</span>
+              </div>
+              <div class="course-card-footer">
+                <div class="price-box">
+                  <span class="price-current">$39.99</span>
+                  <span class="price-original">$99.99</span>
+                </div>
+                <button class="btn btn-primary btn-sm enroll-trigger-btn" data-course="UI/UX Design Masterclass" data-price="$39.99">Enroll Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Instructors Section -->
+    <section class="section instructors-section" id="instructors">
+      <div class="container">
+        <div class="section-top">
+          <span class="sub-badge">World-Class Mentors</span>
+          <h2 class="section-title">Learn from the Best in Tech</h2>
+          <p class="section-subtitle">Our instructors work at leading tech pioneers like Google, Microsoft, and Meta.</p>
+        </div>
+
+        <div class="instructors-grid">
+          <div class="instructor-card">
+            <div class="instructor-img-box">
+              <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=500&q=80" alt="Sarah Jenkins">
+            </div>
+            <div class="instructor-info">
+              <h3>Sarah Jenkins</h3>
+              <p class="instructor-role">Ex-Staff Frontend Engineer at Meta</p>
+              <div class="instructor-stats">
+                <span><i class="fa-solid fa-users"></i> 38,000+ Students</span>
+                <span><i class="fa-solid fa-star"></i> 4.9 Rating</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="instructor-card">
+            <div class="instructor-img-box">
+              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=500&q=80" alt="Dr. Marcus Thorne">
+            </div>
+            <div class="instructor-info">
+              <h3>Dr. Marcus Thorne</h3>
+              <p class="instructor-role">Principal AI Scientist & Author</p>
+              <div class="instructor-stats">
+                <span><i class="fa-solid fa-users"></i> 29,400+ Students</span>
+                <span><i class="fa-solid fa-star"></i> 4.8 Rating</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="instructor-card">
+            <div class="instructor-img-box">
+              <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=500&q=80" alt="Elena Rostova">
+            </div>
+            <div class="instructor-info">
+              <h3>Elena Rostova</h3>
+              <p class="instructor-role">Design Director at FinTech Unicorn</p>
+              <div class="instructor-stats">
+                <span><i class="fa-solid fa-users"></i> 42,000+ Students</span>
+                <span><i class="fa-solid fa-star"></i> 4.95 Rating</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="instructor-card">
+            <div class="instructor-img-box">
+              <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=500&q=80" alt="David Chen">
+            </div>
+            <div class="instructor-info">
+              <h3>David Chen</h3>
+              <p class="instructor-role">DevOps & Cloud Architect at AWS Partner</p>
+              <div class="instructor-stats">
+                <span><i class="fa-solid fa-users"></i> 21,300+ Students</span>
+                <span><i class="fa-solid fa-star"></i> 4.85 Rating</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Student Reviews Section -->
+    <section class="section reviews-section" id="reviews">
+      <div class="container">
+        <div class="section-top">
+          <span class="sub-badge">Testimonials</span>
+          <h2 class="section-title">What Our Learners Say</h2>
+          <p class="section-subtitle">Real feedback from students who transformed their careers through SkillSphere.</p>
+        </div>
+
+        <div class="reviews-grid">
+          <div class="review-card">
+            <div class="stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p class="review-text">
+              "The Full-Stack track helped me build 4 production-grade projects. I landed a Junior Developer role at a top digital agency just 2 months after graduating!"
+            </p>
+            <div class="reviewer-meta">
+              <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=100&q=80" alt="Priya Sharma">
+              <div>
+                <strong>Priya Sharma</strong>
+                <span>Frontend Engineer @ TechLabs</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="review-card">
+            <div class="stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p class="review-text">
+              "The AI Engineering course demystified vector databases and RAG systems. Dr. Thorne's explanations were crystal clear and directly applicable to my job."
+            </p>
+            <div class="reviewer-meta">
+              <img src="https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?auto=format&fit=crop&w=100&q=80" alt="Lucas Vance">
+              <div>
+                <strong>Lucas Vance</strong>
+                <span>Machine Learning Associate</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="review-card">
+            <div class="stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p class="review-text">
+              "Elena's UI/UX bootcamp gave me the portfolio polish I desperately needed. The community Discord and mentor code critiques were invaluable."
+            </p>
+            <div class="reviewer-meta">
+              <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=100&q=80" alt="Chloe Bennett">
+              <div>
+                <strong>Chloe Bennett</strong>
+                <span>Product Designer @ Starlight</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Enrollment / CTA Banner -->
+    <section class="section cta-section" id="pricing">
+      <div class="container">
+        <div class="cta-box">
+          <div class="cta-content">
+            <h2>Ready to Elevate Your Skillset?</h2>
+            <p>Join over 85,000 developers, designers, and tech innovators advancing their careers today.</p>
+            <div class="cta-benefits">
+              <span><i class="fa-solid fa-check"></i> Lifetime Course Access</span>
+              <span><i class="fa-solid fa-check"></i> 30-Day Money-Back Guarantee</span>
+              <span><i class="fa-solid fa-check"></i> Verified Digital Certificate</span>
+            </div>
+            <button class="btn btn-light btn-lg" id="enroll-all-btn">Get All-Access Pass ($19/mo)</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Course Enrollment Modal -->
+  <div class="modal-overlay" id="enroll-modal">
+    <div class="modal-card">
+      <button class="modal-close" id="modal-close-btn">&times;</button>
+      <div class="modal-header">
+        <span class="modal-tag">Quick Enrollment</span>
+        <h3 id="modal-course-title">Enroll in Course</h3>
+        <p class="modal-subtitle">Instant lifetime access + certificate of completion included.</p>
+      </div>
+      <form id="enroll-form" class="modal-form">
+        <div class="form-group">
+          <label>Full Name</label>
+          <input type="text" id="student-name" required placeholder="Alex Morgan">
+        </div>
+        <div class="form-group">
+          <label>Email Address</label>
+          <input type="email" id="student-email" required placeholder="alex@example.com">
+        </div>
+        <div class="form-group">
+          <label>Enrollment Track</label>
+          <select id="enroll-track">
+            <option value="standard">Self-Paced Track (Included)</option>
+            <option value="mentorship">Mentorship Track (+1 on 1 code reviews)</option>
+          </select>
+        </div>
+        <div class="modal-summary">
+          <span>Total Investment:</span>
+          <strong id="modal-price-tag">$49.99</strong>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Confirm Enrollment & Start</button>
+        <p class="guarantee-note"><i class="fa-solid fa-lock"></i> 100% Secure Checkout • 30-Day Money Back Guarantee</p>
+        <div class="modal-feedback" id="modal-feedback"></div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="#" class="brand-logo footer-logo">
+          <div class="logo-mark"><i class="fa-solid fa-shapes"></i></div>
+          <span>Skill<strong>Sphere</strong></span>
+        </a>
+        <p>Empowering the next generation of global builders with cutting-edge engineering and design education.</p>
+        <div class="social-links">
+          <a href="#"><i class="fa-brands fa-youtube"></i></a>
+          <a href="#"><i class="fa-brands fa-github"></i></a>
+          <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Top Tracks</h4>
+        <ul>
+          <li><a href="#courses">Full-Stack Web Dev</a></li>
+          <li><a href="#courses">Generative AI & LLMs</a></li>
+          <li><a href="#courses">Data Science & SQL</a></li>
+          <li><a href="#courses">Figma UI/UX Design</a></li>
+          <li><a href="#courses">DevOps & Cloud</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Platform</h4>
+        <ul>
+          <li><a href="#categories">Browse Catalog</a></li>
+          <li><a href="#instructors">Become an Instructor</a></li>
+          <li><a href="#pricing">Enterprise & Teams</a></li>
+          <li><a href="#reviews">Student Success</a></li>
+          <li><a href="#">Verification Portal</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Stay Updated</h4>
+        <p>Subscribe for free tutorials and weekly course discounts.</p>
+        <form class="footer-newsletter" id="newsletter-form">
+          <input type="email" placeholder="Enter your email" required>
+          <button type="submit" class="btn btn-primary"><i class="fa-solid fa-paper-plane"></i></button>
+        </form>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>© 2026 SkillSphere Education Inc. All rights reserved.</p>
+      <div class="legal-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+        <a href="#">Cookie Preferences</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
